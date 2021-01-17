@@ -7,7 +7,7 @@ const port = 3000
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-app.use(express.static('public'))
+app.use(express.static('build'))
 
 app.get('/', (req, res) => {
   res.send('hello')
