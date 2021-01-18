@@ -1,10 +1,11 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const axios = require('axios')
-
+const compression = require('compression')
 const app = express()
 const port = 3000
 
+app.use(compression())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(express.static('build'))
