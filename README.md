@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Setup
 
-You must signup for a MailChimp API key and place it in the server/example_api-key.js file. Afterwards, rename it to just 'api-key.js'.
+You need to first need to create an 'api-key.js' with a MailChimp API key, audience ID, and the proper server your key is bound to. You can copy or edit and rename 'example_api-key.js'. Typically you won't need to modify the base url.
 
 ## Available Scripts
 
