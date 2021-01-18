@@ -3,7 +3,7 @@
 Provide a simple interface for users to signup to a Mailchimp mailing list.
 
 ## Preview
-![Newsletter-signup preview](https://imgur.com/a/4MdM1Er)
+![Imgur preview](https://i.imgur.com/a/4MdM1Er.gif)
 
 ## Technologies
 - React
