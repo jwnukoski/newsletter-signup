@@ -11,10 +11,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(express.static('build'))
 
-app.get('/', (req, res) => {
-  res.send('hello')
-})
-
 app.post('/subscribe', (req, res) => {
   const headers = {
     auth: {
