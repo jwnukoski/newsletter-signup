@@ -1,3 +1,24 @@
+
+## Purpose
+Provide a simple interface for users to signup to a Mailchimp mailing list.
+
+## Preview
+![Newsletter-signup preview](https://imgur.com/a/4MdM1Er)
+
+## Technologies
+- React
+	- Client
+- Express
+	- Server
+- Compression
+	- ExpressJS server-side compression
+- Axios
+	- Server and client side requests
+- Gulp
+	- For compiling JS into inline HTML
+- Bootstrap
+	- Frontend styling 
+
 ## Setup
 
 You need to first need to create an 'api-key.js' with a MailChimp API key, audience ID, and the proper server your key is bound to. You can copy or edit and rename 'example_api-key.js'. Typically you won't need to modify the base url.
@@ -10,6 +31,10 @@ Subscribes a new user to the mailing list. If the user already exists, they are 
 - email
 - firstName
 - lastName
+
+## TODO
+- Unsubscribe
+- 
 
 ## Available Scripts
 
@@ -47,4 +72,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
