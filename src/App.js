@@ -5,12 +5,12 @@ import * as axios from 'axios'
 
 function App () {
   function handleSubmit (email, firstName, lastName) {
-    axios.post('/submit', {
+    axios.post('/subscribe', {
       email: email,
       firstName: firstName,
       lastName: lastName
     }).then(response => {
-
+      console.log('Response: ', response)
     }).catch(error => {
       console.error(error)
     })
