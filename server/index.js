@@ -36,21 +36,23 @@ app.post('/subscribe', (req, res) => {
 
   axios.post(`https://${api.mailChimpApiKeyServer}.${api.mailChimpApiServerBase}/lists/${api.mailChimpAudienceId}`, data, headers).then(mailChimpResponse => {
     if (mailChimpResponse.data.errors.length > 0) {
-      throw new Error(JSON.stringify(mailChimpResponse.data.errors))
+      console.log('error length')
+      throw new Error(JSON.stringify(mailChimpResponse.data.errors), mailChimpResponse.response.status)
     } else if (mailChimpResponse.request.res.statusCode !== 200) {
       throw new Error(`Mailchimp:
-      Header statusCode: ${mailChimpResponse.request.res.statusCode}
-      Header statusMessage: ${mailChimpResponse.request.res.status}
-      Status: ${mailChimpResponse.data.status}
-      Title: ${mailChimpResponse.data.tile}
-      Type: ${mailChimpResponse.data.type}
-      Detail: ${mailChimpResponse.data.detail}`)
+        Header statusCode: ${mailChimpResponse.request.res.statusCode}
+        Header statusMessage: ${mailChimpResponse.request.res.status}
+        Status: ${mailChimpResponse.data.status}
+        Title: ${mailChimpResponse.data.tile}
+        Type: ${mailChimpResponse.data.type}
+        Detail: ${mailChimpResponse.data.detail}`,
+        mailChimpResponse.request.res.statusCode)
     }
 
     res.status(200).send(`${req.body.email} subscribed`)
-  }).catch(error => {
+  }).catch((error, errorCode = 400) => {
     console.log(error)
-    res.status(400).send(error)
+    res.status(errorCode).send(error)
   })
 })
 
