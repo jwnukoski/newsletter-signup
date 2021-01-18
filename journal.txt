@@ -1,0 +1,3 @@
+1/18/21
+- Didn't use Redux or TypeScript since this is a small project.
+
