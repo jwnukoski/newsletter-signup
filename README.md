@@ -11,8 +11,7 @@ Provide a simple interface for users to signup to a Mailchimp mailing list.
 	- create-react-app used for inital setup
 - Express
 	- Server
-- Compression
-	- ExpressJS server-side compression
+	- Compression and body-parser
 - Axios
 	- Server and client side requests
 - Gulp
