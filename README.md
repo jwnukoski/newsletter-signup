@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup
+
+You must signup for a MailChimp API key and place it in the server/example_api-key.js file. Afterwards, rename it to just 'api-key.js'.
+
 ## Available Scripts
 
 In the project directory, you can run:
