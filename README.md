@@ -18,7 +18,9 @@ Provide a simple interface for users to signup to a Mailchimp mailing list.
 - Gulp
 	- For compiling JS into inline HTML
 - Bootstrap
-	- Frontend styling 
+	- Frontend styling
+- eslint
+	- Standard styling
 
 ## Setup
 
