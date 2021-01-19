@@ -46,7 +46,7 @@ app.post('/subscribe', (req, res) => {
         Title: ${mailChimpResponse.data.tile}
         Type: ${mailChimpResponse.data.type}
         Detail: ${mailChimpResponse.data.detail}`,
-        mailChimpResponse.request.res.statusCode)
+      mailChimpResponse.request.res.statusCode)
     }
 
     res.status(200).send(`${req.body.email} subscribed`)

@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './failure.css'
 
+/**
+ * Represents the failure page if an error happens during the newsletter signup.
+ * @constructor
+ * @param {object} props - The react props. Currently requires the 'error' string, which should contain some information about the error.
+ */
 function Failure (props) {
   return (
     <div className="failure">
