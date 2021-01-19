@@ -25,7 +25,7 @@ function App () {
       case 1:
         return <Success/>
       case 2:
-        return <Failure errors={errors}></Failure>
+        return <Failure errors={errors} setPage={setPage}></Failure>
       default:
         return <div></div>
     }
