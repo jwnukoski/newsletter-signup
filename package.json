@@ -51,6 +51,7 @@
     "eslint-plugin-react": "^7.22.0",
     "gulp": "^4.0.2",
     "gulp-inline-source": "^4.0.0",
-    "gulp-replace": "^1.0.0"
+    "gulp-replace": "^1.0.0",
+    "jsdoc": "^3.6.6"
   }
 }

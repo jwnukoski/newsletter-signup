@@ -1,3 +1,5 @@
 1/18/21
 - Didn't use Redux or TypeScript since this is a small project.
 
+1/19/21
+- Added jsdoc for documentation
