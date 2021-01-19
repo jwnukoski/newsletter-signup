@@ -5,7 +5,8 @@ import './form.css'
 /**
  * Represents the main form page to sign up to the newsletter.
  * @constructor
- * @param {object} props - The react props. Currently requires the 'handleSubmit' function, which passes the form information for submission.
+ * @param {object} props - The react props.
+ * @param {function} props.handleSubmit - Function to send the user info to the server.
  */
 function Form (props) {
   function handleSubmit (e) {
