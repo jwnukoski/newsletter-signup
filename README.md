@@ -17,6 +17,8 @@ Provide a simple interface for users to signup to a Mailchimp mailing list.
 	- Frontend styling
 - eslint
 	- Standard styling
+- jsdoc
+	- For documentation
 
 ## Setup
 
