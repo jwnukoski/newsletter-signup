@@ -24,6 +24,9 @@ Provide a simple interface for users to signup to a Mailchimp mailing list.
 
 You need to first need to create an 'api-key.js' with a MailChimp API key, audience ID, and the proper server your key is bound to. You can copy or edit and rename 'example_api-key.js'. Typically you won't need to modify the base url.
 
+## Documentation
+JSDOC generated documentation is currently available in the 'out' folder.
+
 ## Endpoints
 
 ### /subscribe
