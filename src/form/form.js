@@ -19,11 +19,11 @@ function Form (props) {
       <div className="text-center">
         <form className="form-signin" onSubmit={handleSubmit}>
           <img className="mb-4" src="bootstrap-solid.svg" alt="" width="72" height="72"/>
-          <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
-          <input type="email" className="form-control" placeholder="Email address" required autoFocus/>
-          <input type="text" className="form-control" placeholder="First Name" required/>
-          <input type="text" className="form-control" placeholder="Last Name" required/>
-          <input type="submit" value="Sign up" className="btn btn-lg btn-primary btn-block"/>
+          <h1 className="h3 mb-3 font-weight-normal">Mailchimp Signup</h1>
+          <input type="email" className="form-control" placeholder="Email address" id="email" required autoFocus/>
+          <input type="text" className="form-control" placeholder="First Name" id="first-name" required/>
+          <input type="text" className="form-control" placeholder="Last Name" id="last-name" required/>
+          <input type="submit" id="submit-btn" value="Sign up" className="btn btn-lg btn-primary btn-block"/>
         </form>
       </div>
     </div>
