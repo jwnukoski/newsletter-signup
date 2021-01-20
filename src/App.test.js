@@ -30,9 +30,3 @@ test('renders a visible submit button', () => {
   expect(submitBtn).toBeVisible()
   expect(submitBtn.nodeName).toEqual('INPUT')
 })
-
-// test('renders learn react link', () => {
-//   render(<App />)
-//   const linkElement = screen.getByText(/learn react/i)
-//   expect(linkElement).toBeInTheDocument()
-// })
