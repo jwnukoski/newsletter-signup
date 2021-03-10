@@ -1,5 +1,4 @@
-
-## Purpose
+# newsletter-signup
 Provide a simple interface for users to signup to a Mailchimp mailing list.  
 ![Preview of newsletter-signup](https://i.imgur.com/3HAWj31.gif "newsletter-signup Demo")
 
